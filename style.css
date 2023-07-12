@@ -1,0 +1,33 @@
+@media only screen and (max-width:1440px){
+    body{
+        background-color: red
+    }
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;    
+}
+.title img{
+    height: auto;
+    width: 1440px;
+}
+.text{
+    font-size: 16px;
+    color: #ffff;
+    top: 76%;
+    left: 35%;
+    position: absolute;
+}
+.famplan{
+    background-image: linear-gradient(#a1fbff,#6bb3f3);
+    background-repeat: repeat;
+    position: relative;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    max-width: 1440px;}
