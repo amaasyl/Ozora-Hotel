@@ -1,6 +1,6 @@
 @media only screen and (max-width:1440px){
     body{
-        background-color: red
+        background-color: rgb(224, 232, 255)
     }
 }
 
@@ -17,17 +17,33 @@
 .text{
     font-size: 16px;
     color: #ffff;
-    top: 76%;
+    top: 14%;
     left: 35%;
     position: absolute;
 }
 .famplan{
-    background-image: linear-gradient(#a1fbff,#6bb3f3);
-    background-repeat: repeat;
+    background-image: url(img/Background\ 1.jpg);
+    background-repeat: no-repeat;
     position: relative;
     z-index: 2;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
+    min-height: 1820;
     max-width: 1440px;}
+.swiper{
+    max-width: 1200;
+    max-height: 900;
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-slide img{
+    object-fit: cover;
+}
+.swiper-slide p{
+max-width: 900;
+margin: auto;
+margin-bottom: 30px;
+}

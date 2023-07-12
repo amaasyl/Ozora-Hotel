@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Ozora Hotel</title>
 </head>
 <body>
@@ -11,22 +12,65 @@
                 <img src="img/title.jpg" alt="">
                 <div class="text">「宿泊者様専用」大浴場などの設備や充実したサービスで
                     <br>
-                    ファミリーやグループでゆったりとお過ごしいただけます</div>
+                    ファミリーやグループでゆったりとお過ごしいただけます
+                </div>
             </div>
         <!--family plan-->
         <div class="famplan">
-            <img src="img/fam plan title.png" alt="" srcset=""></div>
+            <img src="img/fam plan title.png" alt="" srcset="">
             <div class="container">
                 <div class="swiper-bg">
                     <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="img/fam01.jpg">
-                        <p></p>
+                        <img src="img/fam01.jpg" width="1157" height="721">
+                        <p>大空リゾート®からは無料のシャトルバスによるアクセスも可能です。ホテルに到着したらフロントでチェックインをお済ませ下さい。</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/fam02.jpg" width="1157" height="721">
+                        <p>客室は全室広々設計で、ファミリーやグループみんなでくつろげます。また、全室がバス・トイレ別で、洗い場付きのお風呂はお子様がいるファミリーにご好評です。</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/fam03.jpg" width="1157" height="721">
+                        <p>館内には、お子様連れのご家族はもちろん、さまざまな年代の方が快適に過ごしていただける施設やサービスをご用意しています。</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/fam04.jpg" width="1157" height="721">
+                        <p>ホテルの目の前には市内唯一の総合公園「浦安市総合公園」があり、海を眺めながら芝生の上で遊んだりくつろいだりできます。</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/fam05.jpg" width="1157" height="721">
+                        <p>最上階の7階には、宿泊者限定でご利用できる大浴場を用意。海を一望できる大浴場で、ご家族みんなで癒やされて下さい。
+                            <br>※小学1年生以上の方は、男女別のご利用とさせていただきます。<br>
+                        </p>
+                    </div>
+                    <!-- navs -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>  
+                    </div>
                     </div>
                 </div>
-            </div>
-</div>
+        </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+        var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        Boolean: true,
+        clickable: true,
+        },
+        });
+</script>
 </body>
 </html>
