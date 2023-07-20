@@ -16,6 +16,10 @@
     font-family: Midashi;
     src: url(../Ozora-Hotel/font/A-OTF-MidashiGoPro-MB31.otf);
 }
+@font-face {
+    font-family: HGR;
+    src: url(../Ozora-Hotel/font/HGRPRE.TTC);
+}
 #wrapper {
     width: 100%;
     max-width: 1440px;
@@ -27,11 +31,13 @@
     width: 1440px;
 }
 .text{
-    font-size: 16px;
+    font-size: 25px;
     color: #ffff;
-    top: 45%;
-    left: 35%;
+    top: 21.5%;
+    left: 28%;
     position: absolute;
+    text-shadow: -1px -1px 0 #000000;
+    font-family: Midashi;
 }
 .famplan{
     background-image: url(img/Background\ 1.jpg);
@@ -116,4 +122,13 @@ font-family: Musashi;
     text-align: center;
     min-height: 1645;
     max-width: 1440px;
+}
+.cp-text{
+    font-family: Musashi;
+    color: #0b2282;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 25px;
 }
