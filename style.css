@@ -243,6 +243,7 @@ font-family: Musashi;
     background-image: url(img/bg\ 4.jpg);
     background-repeat: no-repeat;
     position: relative;
+    min-height: 435px;
     z-index: 2;
     left: 0;
     right: 0;
@@ -262,8 +263,21 @@ font-family: Musashi;
     font-weight: bold;
     padding-left: 10px;
 }
+
 .button-container{
-    display:flex;
+    position:relative;
     font-size: 18px;
     line-height: 25px;
+}
+
+#jal{
+    position: absolute;
+    display: flex;
+    margin-left: 70px;
+}
+
+#ana{
+    position: absolute;
+    display: flex;
+    margin-left: 750px;
 }
