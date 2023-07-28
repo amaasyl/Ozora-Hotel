@@ -365,7 +365,7 @@ font-family: Musashi;
     .text{
         font-size: 10px;
         color: #ffff;
-        top: 8%;
+        top: 8.5%;
         left: 15%;
         position: absolute;
         text-shadow: -1px -1px 0 #000000;
@@ -706,7 +706,7 @@ font-family: Musashi;
     .sp-bft{
         display: block;
     }
-    .sp-rating{
+    .rating-sp{
         display: block;
     }
     #buffet-title{
