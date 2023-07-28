@@ -24,7 +24,7 @@
 }
 .title img{
     height: auto;
-    width: 1440px;
+    max-width: 1440px;
 }
 .text{
     font-size: 25px;
@@ -87,6 +87,15 @@ font-family: Musashi;
     justify-content: center;
     align-items: center;
 }
+.swiper-button-next, .swiper-button-prev{
+    --swiper-navigation-size: 50px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;    
+}
+.swiper-pagination{
+    width: 8px;
+    margin: 8px;
+}
 .famplan1 p{
     position: absolute;
     padding: 70px;
@@ -108,6 +117,15 @@ font-family: Musashi;
 .sp-fambutton1{
     display: none;
 }
+.sp-box1{
+    display:none;
+}
+.sp-fambutton2{
+    display: none;
+}
+.sp-box2{
+    display:none;
+}
 .famplan2 p{
     position: absolute;
     padding: 70px;
@@ -126,7 +144,7 @@ font-family: Musashi;
     margin-left: 24%;
     margin-top: 5%;
 }
-.childplan{
+.childplan-bg{
     background-color: #f2e8de;
     background-repeat: repeat;
     position: relative;
@@ -165,6 +183,18 @@ font-family: Musashi;
     margin-left: 20%;
     margin-top: 2%;
 }
+.sp-childplan{
+    display:none;
+}
+.sp-cpimage{
+    display: none;
+}
+.sp-cpbutton{
+    display: none;
+}
+.sp-cpbox{
+    display:none;
+}
 .camp{
     background-color: #8dbfff;
     background-repeat: repeat;
@@ -176,14 +206,6 @@ font-family: Musashi;
     text-align: center;
     min-height: 1820;
     max-width: 1440px;
-}
-.swiper-bg2{
-    background-color: white;
-    padding: 30px 30px;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
 }
 .camp-desc{
     font-family: Musashi;
@@ -218,25 +240,37 @@ font-family: Musashi;
     color: #17427d;
     font-family: HGR;
 }
-.buffet{
+.sp-camptitle{
+    display:none;
+}
+.sp-cbx1{
+    display: none;
+}
+.sp-cmbutton1{
+    display: none;
+}
+.sp-cbx2{
+    display: none;
+}
+.sp-cmbutton2{
+    display: none;
+}
+.sp-beach{
+    display:none;
+}
+.buffet-bg{
     background-image: url(img/buffet\ bg.jpg);
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+}
+.buffet{
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
-    min-height: 1820;
+    min-height: 2122;
     max-width: 1440px;
-}
-.swiper-bg3{
-    background-color: white;
-    padding: 30px 30px;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
 }
 .buffet-desc{
     font-family: HGR;
@@ -252,6 +286,12 @@ font-family: Musashi;
     line-height: 30px;
     font-size: 25px;
     margin-top: 0%;
+}
+.sp-bft{
+    display: none;
+}
+.sp-rating{
+    display: none;
 }
 .plans{
     background-image: url(img/bg\ 4.jpg);
@@ -296,6 +336,7 @@ font-family: Musashi;
     display: flex;
     margin-left: 750px;
 }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MEDIA RULE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MEDIA RULE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MEDIA RULE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -356,7 +397,7 @@ font-family: Musashi;
         margin-top: -5px;
     }
     #sp-titlefam{
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .flower{display:none;
     }
@@ -380,13 +421,13 @@ font-family: Musashi;
     }
     .swiper-slide p{
     margin: auto;
-    font-size: 4px;
+    font-size: 10px;
     font-family: Musashi;
     margin-bottom: 30px
     }
     .swiper-bg{
         background-color: white;
-        padding: 30px 30px;
+        padding: 20px 20px;
         width: 75%;
         margin: 0 auto;
         justify-content: center;
@@ -394,29 +435,36 @@ font-family: Musashi;
     }
     .swiper-button-next, .swiper-button-prev{
             --swiper-navigation-size: 20px;
-            --swiper-navigation-top-offset: 40%;
+            --swiper-navigation-top-offset: 50%;
             --swiper-navigation-sides-offset: 10px;    
     }
+    .swiper-pagination{
+        width: 2px;
+        margin: 10px;
+        margin-left: -1px;
+    }
     .sp-box1{
-        margin-top:30px;
+        margin-top:20px;
     }
     .famplan1 p{
         position: absolute;
-        padding: 70px;
-        font-size: 3px;
+        padding: 65px;
+        font-size: 8px;
         text-align: center;
-        margin-left: 20%;
-        margin-top: 0%;
-        line-height: 30px;
-        letter-spacing: 3px;
+        margin-left: 5%;
+        margin-right: 0px;
+        margin-top: -60px;
+        line-height: 12px;
+        letter-spacing: -1px;
         color: #000000;
         font-family: UDDigi;
+        z-index: 2;
     }
     .sp-fambutton1{
-        padding: 20px;
+        padding: 27px;
         z-index: 2;
-        margin-left: 20%;
-        margin-top: 0%;
+        margin-left: 25%;
+        margin-top: 1%;
         position: absolute;
     }
     .fam-button1{
@@ -431,5 +479,284 @@ font-family: Musashi;
     }
     .box1{
         display: none;
+    }
+    .sp-box2{
+        margin-top:10px;
+    }
+    .famplan2 p{
+        position: absolute;
+        padding: 65px;
+        font-size: 8px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 0px;
+        margin-top: -60px;
+        line-height: 12px;
+        letter-spacing: -1px;
+        color: #000000;
+        font-family: UDDigi;
+        z-index: 2;
+    }
+    .sp-fambutton2{
+        padding: 27px;
+        z-index: 2;
+        margin-left: 25%;
+        margin-top: 1%;
+        position: absolute;
+    }
+    .fam-button2{
+        display: none;
+    }
+    .sp-fambutton2{
+        display:block;
+    }
+    .sp-box2{
+        display:block;
+        position: relative;
+    }
+    .box2{
+        display: none;
+    }
+    .childplan-bg{
+        background-color: #f2e8de;
+        background-repeat: repeat;
+        position: relative;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        min-height: 428px;
+        max-width: 375px;
+    }
+    #sp-cptitle{
+        margin-top: 10px;
+    }
+    .cp-text{
+        font-family: Musashi;
+        color: #0b2282;
+        padding: 5px;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .sp-cpbox{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .cp p{
+        padding: 70px;
+        font-size: 10px;
+        text-align: center;
+        margin-left: 5%;
+        margin-top: -56px;
+        line-height: 10px;
+        letter-spacing: 1px;
+        color: #000000;
+        font-family: UDDigi;
+        z-index: 2;
+    }
+    .sp-cpbutton {
+        padding: 0px;
+        z-index: 2;
+        margin-left: 28%;
+        margin-top: 30px;
+        position: absolute;
+    }
+    #cp-title{
+        display:none;
+    }
+    .childplan-image{
+        display:none;
+    }
+    .sp-childplan{
+        display:block;
+    }
+    .sp-cpimage{
+        display: block;
+        margin-top: 5px;
+    }
+    .cp-button{
+        display:none;
+    }
+    .cp-box{
+        display:none;
+    }
+    .sp-cpbutton{
+        display: block;
+    }
+    .sp-cpbox{
+        display:block;
+        position: relative;
+    }
+    .camp{
+        background-color: #8dbfff;
+        background-repeat: repeat;
+        position: relative;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        min-height: 726px;
+        max-width: 375px;
+    }
+    .sp-camptitle{
+        margin-top: 0px;
+    }
+    .camp-desc{
+        font-family: Musashi;
+        color: #2f0000;
+        padding: 10px;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 9px;
+        line-height:15px;
+    }
+    .camp-plan1 p{
+        position: absolute;
+        padding: 70px;
+        font-size: 9px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: -18%;
+        line-height: 10px;
+        letter-spacing: -1px;
+        color: #17427d;
+        font-family: HGR;
+        z-index: 2;
+    }
+    .camp-plan2 p{
+        position: absolute;
+        padding: 70px;
+        font-size: 9px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: -18%;
+        line-height: 10px;
+        letter-spacing: -1px;
+        color: #17427d;
+        font-family: HGR;
+        z-index: 2;
+    }
+    #camp-title{
+        display: none
+    }
+    .sp-camptitle{
+        display:block;
+    }
+    .sp-cbx1{
+        display: block;
+    }
+    .sp-cmbutton1{
+        display: block;
+    }
+    .sp-cbx2{
+        display: block;
+    }
+    .sp-cmbutton2{
+        display: block;
+    }
+    .child-box1{
+        display: none;
+    }
+    .child-button1{
+        display: none;
+    }
+    .child-box2{
+        display: none;
+    }
+    .child-button2{
+        display: none;
+    }
+    .beach-decor{
+        display: none;
+    }
+    .sp-beach{
+        display:block;
+    }
+    .buffet{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        min-height: 530;
+        max-width: 375x;
+    }
+    .buffet-desc{
+        font-family: HGR;
+        color: #0b082d;
+        padding: 7px;
+        text-align: center;
+        margin-top: -5px;
+        font-size: 9px;
+        line-height:10px;
+    }
+    .rating p{
+        font-family: HGR;
+        color: #0b082d;
+        padding: 7px;
+        text-align: center;
+        margin-top: -5px;
+        font-size: 8px;
+        line-height:15px;
+        letter-spacing: -1px;
+    }
+    .sp-bft{
+        display: block;
+    }
+    .sp-rating{
+        display: block;
+    }
+    #buffet-title{
+        display: none;
+    }
+    .rating-image{
+        display: none;
+    }
+    .button-container{
+        position:relative;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .plans{
+        background-image: url(img/bg\ 4.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 150px;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        max-width: 375px;
+    }
+    .button{
+        text-align: center;
+        font-family: Midashi;
+        background-color: #fffcb4;
+        border-color: white;
+        border-radius: 12px;
+        width: 156px;
+        height: 32px;
+        font-size: 10px;
+        font-weight: bold;
+        padding-left: 10px;
+        box-shadow: 0 5px 7px 0 rgba(240, 146, 83, 0.685),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    #cupon{
+        margin-top: -10px;
+    }
+    #jal{
+        position: absolute;
+        margin-left: 113px;
+        margin-top: -35px;
+    }
+    
+    #ana{
+        position: absolute;
+        margin-left: 113px;
+        margin-top: 10px;
     }
 }
