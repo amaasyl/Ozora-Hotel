@@ -365,7 +365,7 @@ font-family: Musashi;
     .text{
         font-size: 10px;
         color: #ffff;
-        top: 8.5%;
+        top: 8%;
         left: 15%;
         position: absolute;
         text-shadow: -1px -1px 0 #000000;
@@ -724,7 +724,7 @@ font-family: Musashi;
         background-image: url(img/bg\ 4.jpg);
         background-repeat: no-repeat;
         position: relative;
-        min-height: 15px;
+        min-height: 150px;
         z-index: 2;
         left: 0;
         right: 0;
